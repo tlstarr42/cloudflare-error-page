@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="bootstrap-asu.css">
     <style>
         #filldiv {
-            height: calc(100vh - 378px);
+            height: calc(100vh - 420px);
         }
     
-        .container-page-404 {
+        /* .container-page-404 {
             width: 30%;
             margin-top: 75px;
             margin-bottom: 75px
@@ -41,10 +41,11 @@
             .container-page-404 {
                 width: 100%
             }
-        } 
+        }  */
         .center {
        width: 50%; /* Set the width of the div */
        margin: 0 auto; /* Center the div horizontally */
+       margin-top: 10%;
     }
     
         /* header mid */
@@ -63,43 +64,45 @@
     #header-mid input[type=search] {
       background: url("img/font-awesome-svg/search-gray-6.svg") no-repeat 10px 50%;
       background-size: 12px;
-      font-size: 0.75rem;
+      /* font-size: 0.75rem; */
       line-height: 0.75rem;
       border-radius: 0;
       padding: 0.25rem;
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
       transition: all 0.5s;
-      height: 1.5rem;
+      height: 2rem;
       margin: 0;
-      width: 200px;
-      box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 2px #191919;
+      width: 100%;
+      box-shadow: 0px 0px 0px 2px #ffffff00, 0px 0px 0px 2px #191919;
+      padding-left: 2rem;
     }
     
     
     
-    #header-mid input[type=search]:focus {
+    /* #header-mid input[type=search]:focus {
       background-image: url("img/font-awesome-svg/search-gray-5.svg");
-      width: 200px;
-      color: #747474;
+      width: 100%;
+      color: #747474; 
       background-color: #fff;
       cursor: auto;
       margin: 0.75rem 0;
       padding-left: 2rem;
-    }
+    } */
     
     #header-mid input[type=search]:focus+label {
       display: block;
+      
     }
     
     
-    #header-mid input:-moz-placeholder {
-      color: transparent;
+    /* #header-mid input:-moz-placeholder {
+        padding-left: .5rem;
     }
     
     #header-mid input::-webkit-input-placeholder {
-      color: transparent;
-    }
+        padding-left: .5rem;
+    }  */
     
     </style>
     
@@ -265,30 +268,29 @@
 
 
 
-    <div id='filldiv'>
+<div id='filldiv'>
         <div class="container">
-        <div id="skip-to-content" class="page__content">
-            <div id="header-mid" class=" center container-page-404">
-                <h1>Hmm, we can't find that page</h1>
-                <h4> Search all of ASU </h4>
-
+          <div id="skip-to-content" class="page__content">
+            <div id="header-mid" class="center">
+              <h1>Hmm, we can't find that page</h1>
+              <h4> Search all of ASU </h4>
+              <div class="navbar-mobile-footer pinned">
                 <form action="https://search.asu.edu/search" class="form-inline navbar-mobile-search" method="get" name="gs">
-
-                    <input aria-label="header-mid-search" class="form-control" name="q" placeholder="Search asu.edu" type="search" />
-                    <label id="header-mid-search">Search asu.edu</label>
-                    <input name="site" type="hidden" value="default_collection" />
-                    <input name="sort" type="hidden" value="date:D:L:d1" />
-                    <input name="output" type="hidden" value="xml_no_dtd" />
-                    <input name="ie" type="hidden" value="UTF-8" />
-                    <input name="oe" type="hidden" value="UTF-8" />
-                    <input name="client" type="hidden" value="asu_frontend" />
-                    <input name="proxystylesheet" type="hidden" value="asu_frontend" />
-
+                  <input aria-label="header-mid-search" class="form-control" name="q" placeholder="Search asu.edu" type="search" />
+                  <!-- <label id="header-mid-search">Search asu.edu</label> -->
+                  <input name="site" type="hidden" value="default_collection" />
+                  <input name="sort" type="hidden" value="date:D:L:d1" />
+                  <input name="output" type="hidden" value="xml_no_dtd" />
+                  <input name="ie" type="hidden" value="UTF-8" />
+                  <input name="oe" type="hidden" value="UTF-8" />
+                  <input name="client" type="hidden" value="asu_frontend" />
+                  <input name="proxystylesheet" type="hidden" value="asu_frontend" />
                 </form>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+ </div>
 
 
 
