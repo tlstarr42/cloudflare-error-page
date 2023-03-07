@@ -1,16 +1,20 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>error page</title>
     <!-- Google Tag Manager ASU Universal-->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-KDWN8Z');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KDWN8Z');</script>
     <!--<link rel="stylesheet" href="bootstrap-asu.css">-->
     <style>
         :focus {
@@ -2122,13 +2126,41 @@ Should be included after @import scss/grid. Registered here for clarity.
         #header-mid input[type=search]:focus+label {
             display: block;
         }
+
+        /* Cloudfare Styles */
+        #cf-background {
+            background-color: #1e1e1e;
+            width: 100%;
+        }
+
+        #cf500 {
+            color: #ffffff;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        #cf500 h1 {
+            font-size: 1.5em;
+        }
+
+        #cf500 p {
+            font-size: 1em !important;
+            line-height: 1;
+        }
+
+        #cf500 li {
+            font-weight: 100;
+            list-style-type: none;
+            line-height: 1.8;
+        }
     </style>
 </head>
 
 <body>
- <!-- Google Tag Manager (noscript) -->
- <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KDWN8Z"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KDWN8Z" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager ASU Universal -->
     <!--globalheader-->
     <div>
@@ -2202,8 +2234,9 @@ Should be included after @import scss/grid. Registered here for clarity.
                                                     </span> </button>
                                                 <div class="navbar-container no-links">
                                                     <div class="title subdomain-name"> <a
-                                                            data-ga-header="Subdomain name" href="#"
-                                                            title="Subdomain name home page"> Arizona State university
+                                                            data-ga-header="Subdomain name" href="https://www.asu.edu/"
+                                                            title="Arizona State university home page"> Arizona State
+                                                            university
                                                         </a> </div>
                                                     <div class="collapse navbar-collapse w-100 justify-content-between"
                                                         id="menubar">
@@ -2282,6 +2315,11 @@ Should be included after @import scss/grid. Registered here for clarity.
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="cf-background">
+        <div id="cf500">
+            ::CLOUDFLARE_ERROR_500S_BOX::
         </div>
     </div>
 
